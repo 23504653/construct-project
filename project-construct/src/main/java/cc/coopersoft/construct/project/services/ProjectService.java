@@ -55,7 +55,7 @@ public class ProjectService {
 
     public Optional<Project> project(String code){
         //TODO implements
-        return null;
+        return this.projectRepository.findById(code);
     }
 
     public Optional<ProjectReg> business(String id){
